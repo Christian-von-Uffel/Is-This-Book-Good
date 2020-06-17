@@ -107,6 +107,19 @@ img {
   color: #3BC348
   font-weight:bold;
 }
+#footer {
+  text-align: center;
+  margin: auto;
+  max-width: 225px;
+  padding-top: 20vh;
+  font-size: 12px;
+  bottom: 10px;
+}
+#footer-image {
+  width: 32px;
+  padding-top: 8px;
+	box-shadow: none;
+}
 input[type=text], select {
   /* width: 100%; */
   padding: 12px 20px;
