@@ -15,22 +15,46 @@
           <img src="Images/Logo128.png" class="logo-image" onclick="/">
           <h1 id="title">Is this book good?</h1>
           <div class="homepage-content">
-            Don’t read another “bad” book again.
+            Tired of regretting bad book purchases?
 
-            We built a Chrome extension to help readers avoid wasting time and regret bad book purchases by evaluating books on 3 criteria:
+We are too, and after repeating the same process over and over again to filter out potentially bad book purchases, we decided to build a tool that would do this for us instead.
 
-            1. how recently did the book come out?
-            2. what's the buyer success rate for people who bought the book?
-            3. what percentage of people have rated the book 1-star?
+Introducing <a href="https://chrome.google.com/webstore/detail/phkgdfodiaemjaiikckbpfddcjonhclk/">Is This Book Good</a>, a chrome extension that helps you spot potential red flags in book review data on Amazon.com and lets you instantly compare ratings of books with different numbers of reviews.
 
-            We then judge these scores on a pass/fail basis and show these scores only on Amazon book's product pages so you are instantly informed.
 <img src="Images/1.png" alt="Spot potential red flags in book review data on Amazon.com">
 
+We know it's not possible to "know" if a book is "good" before we read it, but by looking out for negative signals in review data we can help answer this fundamental question: "Is this book good?"
+
+<h1 id="heading">How it works</h1>
+There are 3 ways Is This Book Good tries to give users more context on how to make book purchasing decisions.
+
+First, we try to correct for a positive bias that currently exists towards books that have high ratings and a low number of reviews.
+
+To address this, we calculate the buyer success rate, which factors in the number of reviews a book has.
+
+We use a simple formula for this called "Rule of Succession". You can read more about this formula here: <a href="https://en.wikipedia.org/wiki/Rule_of_succession">https://en.wikipedia.org/wiki/Rule_of_succession</a>
 
 <img class="zoom-image" src="Images/Buyer Success Rate - Score Highlight.png" alt="book buyer success rate using the rule of succession">
+
+Next, we address another source of bias in review ratings: recency.
+
+Since books are more likely to receive favorable reviews when they are new, we bring attention to how long ago the book came out.
+
 <img src="Images/Days Since Release - Score Highlight.png" alt="">
+
+Third, and lastly, we try to address the hidden sources of book buyer frustration by bringing attention to the number, specifically the percentage of, 1-star reviews.
+
 <img src="Images/% of 1-Star Reviews - Score Highlight.png" alt="">
+<h1 id="heading">What to Expect as a User</h1>
+First things first, we don't collect any of your data or send any of your data to anywhere else.
+
+Two, the Is This Book Good extension only runs on Amazon.com product pages, and nowhere else. We know a tool is only useful when it shows up at the right time.
+
+Three, our tool goes away when you need it to. Our popup disappears from your page with a single click, so you can keep browsing and shopping like you're used to.
+
             <img src="Images/click to remove the book scores overlay.gif" alt="Is this book Good? extension preview" width="680" class="center">
+
+            <button onclick="location.href='mailto:christian@cvonu.com?subject=Is%20This%20Book%20Good%20Feedback'" id="feedback-button" type="button" name="button">Give Feedback</button>
 </div>
 </body>
 </html>
