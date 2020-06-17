@@ -4,11 +4,11 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 16px;
-  padding-bottom: 0px;
+  padding-bottom: 60px;
 }
 h1 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 32px;
   line-height: 0.5em;
 }
 h2 {
@@ -21,6 +21,9 @@ h3 {
   font-size: 16px;
   line-height: 0.5em;
   }
+a:link {
+	color: black;
+}
 b {
   font-weight:500;
   margin-left: 1em
@@ -53,7 +56,12 @@ div.homepage-content {
 img {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	max-width: 680px;
+	border-radius: 3px;
 }
+/* .zoom-image:hover {
+	transform: scale(1.2);
+	transition: .25s;
+} */
 
 .center {
 	display: block;
@@ -77,6 +85,9 @@ img {
   padding-top: 96px;
   padding-bottom: 24px;
   color: #333;
+}
+#heading {
+	padding-top: 105px;
 }
 #evaluation-Criteria {
   font-weight: 400;
