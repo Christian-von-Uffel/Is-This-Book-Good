@@ -72,6 +72,9 @@ img {
 .logo-image {
 	box-shadow: none;
 	width: 60px;
+	top: 20px;
+	left: 32px;
+	position: fixed;
 }
 #signup-button {
   float: right;
