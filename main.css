@@ -73,6 +73,14 @@ img {
 	box-shadow: none;
 	width: 60px;
 }
+#signup-button {
+  float: right;
+  text-decoration: none;
+  color: black
+	top: 20px;
+  right: 20px;
+  position: fixed;
+}
 #feedback-button {
   float: right;
   text-decoration: none;
